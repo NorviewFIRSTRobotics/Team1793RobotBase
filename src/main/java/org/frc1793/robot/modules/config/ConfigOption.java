@@ -1,4 +1,4 @@
-package org.frc1793.robot.config;
+package org.frc1793.robot.modules.config;
 
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
