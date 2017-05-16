@@ -1,20 +1,16 @@
 package org.frc1793.robot;
 
 import edu.wpi.first.wpilibj.DriverStation;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.frc1793.robot.config.Config;
 import org.frc1793.robot.config.ConfigOption;
 import org.frc1793.robot.config.SmartDashboardWrapper;
-import org.strongback.command.Command;
 import org.strongback.components.CurrentSensor;
 import org.strongback.components.VoltageSensor;
 import org.strongback.hardware.Hardware;
 
-import java.util.List;
-
 /**
  * Created by tyler on 4/12/17.
+ * Controls interactions with the Network Tables Dashboard.
  */
 public class Dashboard {
 

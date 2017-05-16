@@ -4,14 +4,20 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 
 /**
  * Created by tyler on 4/11/17.
+ * Base class to initialize and run the Robot
  */
 public class Robot extends IterativeRobot {
     private Dashboard dashboard;
     private State state;
 
+
     @Override
     public void robotInit() {
         dashboard = new Dashboard();
+        initHumanInteractions();
+    }
+
+    private void initHumanInteractions() {
 
     }
 
@@ -50,6 +56,7 @@ public class Robot extends IterativeRobot {
     public void disabledPeriodic() {
 
     }
+
 
     protected enum State {
         AUTO("Autonomous"), TELEOP("Teleop"), DISABLED("Disabled");

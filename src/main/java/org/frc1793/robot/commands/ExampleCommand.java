@@ -2,10 +2,10 @@ package org.frc1793.robot.commands;
 
 import org.strongback.Strongback;
 import org.strongback.command.Command;
-import org.strongback.command.Requirable;
 
 /**
  * Created by tyler on 4/11/17.
+ * An example of a command structure.
  */
 public class ExampleCommand extends Command {
     private String word;
