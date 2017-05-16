@@ -1,6 +1,7 @@
 package org.frc1793.robot.config;
 
 import edu.wpi.first.wpilibj.Preferences;
+import edu.wpi.first.wpilibj.Sendable;
 
 /**
  * Created by tyler on 4/12/17.
@@ -34,6 +35,9 @@ public class PreferencesWrapper implements IConfigTable {
     }
 
     @Override
+    public void putData(String key, Sendable data) { }
+
+    @Override
     public boolean getBoolean(String key, boolean defaultVal) {
         return preferences.getBoolean(key, defaultVal);
     }
@@ -51,5 +55,10 @@ public class PreferencesWrapper implements IConfigTable {
     @Override
     public Integer getInteger(String key, Integer defaultVal) {
         return preferences.getInt(key, defaultVal);
+    }
+
+    @Override
+    public Sendable getData(String key) {
+        return null;
     }
 }
